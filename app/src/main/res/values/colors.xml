@@ -1,5 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <!-- Colores de marca -->
+    <color name="color_primario">#FF2F4B9A</color>
+    <color name="color_sobre_primario">#FFFFFFFF</color>
+    <color name="color_primario_contenedor">#FFDCE3F9</color>
+    <color name="color_sobre_primario_contenedor">#FF14245A</color>
+    <color name="color_acento">#FFFF8A3D</color>
+    <color name="color_sobre_acento">#FF1C2333</color>
+
+    <!-- Fondos y superficies -->
+    <color name="color_fondo">#FFF5F7FB</color>
+    <color name="color_superficie">#FFFFFFFF</color>
+    <color name="color_borde">#FFDDE3EE</color>
+
+    <!-- Textos -->
+    <color name="color_texto_principal">#FF1C2333</color>
+    <color name="color_texto_secundario">#FF5F6B7A</color>
+
+    <!-- Prioridades de las tareas -->
+    <color name="color_prioridad_alta">#FFE5484D</color>
+    <color name="color_prioridad_media">#FFF5A524</color>
+    <color name="color_prioridad_baja">#FF30A46C</color>
 </resources>
