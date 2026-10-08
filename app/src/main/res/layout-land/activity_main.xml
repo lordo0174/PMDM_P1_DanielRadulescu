@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Pantalla principal en horizontal (y en tablets apaisadas): dos columnas que se desplazan por separado.
+     A la izquierda la cabecera y el resumen; a la derecha el filtro y la lista de tareas.
+     InefficientWeight se ignora porque los anchos con peso usan @dimen/ancho_segun_peso (0dp). -->
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="InefficientWeight">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="@dimen/ancho_segun_peso"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clipToPadding="false"
+            android:paddingStart="@dimen/margen_pantalla"
+            android:paddingTop="@dimen/margen_pantalla"
+            android:paddingEnd="@dimen/espacio_medio"
+            android:paddingBottom="@dimen/margen_pantalla">
+
+            <include layout="@layout/seccion_cabecera" />
+        </androidx.core.widget.NestedScrollView>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="@dimen/ancho_segun_peso"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clipToPadding="false"
+            android:paddingStart="@dimen/espacio_medio"
+            android:paddingEnd="@dimen/margen_pantalla"
+            android:paddingBottom="@dimen/espacio_boton_flotante">
+
+            <include layout="@layout/seccion_tareas" />
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+
+    <!-- Botón para crear una tarea nueva -->
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/botonNuevaTarea"
+        style="@style/Agendo.BotonFlotante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/margen_pantalla"
+        android:text="@string/accion_nueva_tarea"
+        app:icon="@drawable/ic_add" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

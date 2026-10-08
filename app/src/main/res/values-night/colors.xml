@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Tema oscuro: mismos nombres que values/colors.xml con tonos para fondo oscuro.
+     El tema y los estilos no cambian: Android elige este archivo cuando el modo oscuro está activo. -->
+<resources>
+    <!-- Colores de marca (más claros para que destaquen sobre el fondo oscuro) -->
+    <color name="color_primario">#FFA9BCFF</color>
+    <color name="color_sobre_primario">#FF0F1B4D</color>
+    <color name="color_primario_contenedor">#FF263A7A</color>
+    <color name="color_sobre_primario_contenedor">#FFDCE3F9</color>
+    <color name="color_acento">#FFFF9A57</color>
+    <color name="color_sobre_acento">#FF1C2333</color>
+
+    <!-- Fondos y superficies -->
+    <color name="color_fondo">#FF11141B</color>
+    <color name="color_superficie">#FF1A1E27</color>
+    <color name="color_superficie_variante">#FF252A35</color>
+    <color name="color_borde">#FF2E3442</color>
+
+    <!-- Textos -->
+    <color name="color_texto_principal">#FFE6E9F0</color>
+    <color name="color_texto_secundario">#FFA3ACBB</color>
+
+    <!-- Prioridades (más luminosas para mantener el contraste) -->
+    <color name="color_prioridad_alta">#FFFF6B6F</color>
+    <color name="color_prioridad_media">#FFFFB547</color>
+    <color name="color_prioridad_baja">#FF4CC38A</color>
+
+    <color name="color_prioridad_alta_fondo">#FF4A2326</color>
+    <color name="color_prioridad_media_fondo">#FF47361A</color>
+    <color name="color_prioridad_baja_fondo">#FF1E3D2D</color>
+</resources>

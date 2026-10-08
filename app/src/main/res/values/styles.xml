@@ -141,7 +141,7 @@
         <item name="boxCornerRadiusTopEnd">@dimen/radio_boton</item>
         <item name="boxCornerRadiusBottomStart">@dimen/radio_boton</item>
         <item name="boxCornerRadiusBottomEnd">@dimen/radio_boton</item>
-        <item name="boxStrokeColor">@color/color_primario</item>
+        <item name="boxStrokeColor">@color/borde_campo_texto</item>
         <item name="hintTextColor">@color/color_primario</item>
         <item name="android:layout_marginBottom">@dimen/espacio_grande</item>
     </style>
@@ -152,7 +152,7 @@
         <item name="boxCornerRadiusTopEnd">@dimen/radio_boton</item>
         <item name="boxCornerRadiusBottomStart">@dimen/radio_boton</item>
         <item name="boxCornerRadiusBottomEnd">@dimen/radio_boton</item>
-        <item name="boxStrokeColor">@color/color_primario</item>
+        <item name="boxStrokeColor">@color/borde_campo_texto</item>
         <item name="hintTextColor">@color/color_primario</item>
         <item name="android:layout_marginBottom">@dimen/espacio_grande</item>
     </style>

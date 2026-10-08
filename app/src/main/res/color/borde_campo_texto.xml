@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Color del borde de los campos de texto según su estado. Al usar colores de la paleta,
+     el borde se ve bien tanto en el tema claro como en el oscuro. -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:color="@color/color_primario" android:state_focused="true" />
+    <item android:color="@color/color_texto_principal" android:state_hovered="true" />
+    <item android:color="@color/color_borde" android:state_enabled="false" />
+    <item android:color="@color/color_texto_secundario" />
+</selector>

@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Parte de las tareas de la pantalla principal: filtro por categorías y lista de tareas.
+     Se reutiliza con <include> en layout/activity_main.xml y layout-land/activity_main.xml.
+     InefficientWeight se ignora porque los anchos con peso usan @dimen/ancho_segun_peso (0dp). -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:ignore="InefficientWeight">
+
+    <!-- Filtro por categoría -->
+    <TextView
+        style="@style/Agendo.Texto.Seccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/seccion_categorias" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/grupoCategorias"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:checkedChip="@id/chipTodas"
+            app:selectionRequired="true"
+            app:singleLine="true"
+            app:singleSelection="true">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipTodas"
+                style="@style/Agendo.Chip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/categoria_todas" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipClase"
+                style="@style/Agendo.Chip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/categoria_clase" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipTrabajo"
+                style="@style/Agendo.Chip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/categoria_trabajo" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipPersonal"
+                style="@style/Agendo.Chip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/categoria_personal" />
+        </com.google.android.material.chip.ChipGroup>
+    </HorizontalScrollView>
+
+    <!-- Lista de tareas -->
+    <TextView
+        style="@style/Agendo.Texto.Seccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/seccion_tareas" />
+
+    <!-- Tarea 1 -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/tarjetaTarea1"
+        style="@style/Agendo.Tarjeta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <View style="@style/Agendo.MarcaPrioridad.Alta" />
+
+            <CheckBox
+                android:id="@+id/casillaTarea1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/espacio_medio"
+                android:checked="true"
+                android:contentDescription="@string/tarea_1_titulo" />
+
+            <LinearLayout
+                android:layout_width="@dimen/ancho_segun_peso"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/espacio_grande"
+                android:paddingBottom="@dimen/espacio_grande">
+
+                <TextView
+                    android:id="@+id/tituloTarea1"
+                    style="@style/Agendo.Texto.TituloTarea"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tarea_1_titulo" />
+
+                <TextView
+                    style="@style/Agendo.Texto.Secundario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/espacio_pequeno"
+                    android:text="@string/tarea_1_detalle" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/Agendo.Texto.Etiqueta.Alta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/espacio_medio"
+                android:layout_marginEnd="@dimen/espacio_grande"
+                android:text="@string/prioridad_alta" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Tarea 2 -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/tarjetaTarea2"
+        style="@style/Agendo.Tarjeta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <View style="@style/Agendo.MarcaPrioridad.Media" />
+
+            <CheckBox
+                android:id="@+id/casillaTarea2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/espacio_medio"
+                android:contentDescription="@string/tarea_2_titulo" />
+
+            <LinearLayout
+                android:layout_width="@dimen/ancho_segun_peso"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/espacio_grande"
+                android:paddingBottom="@dimen/espacio_grande">
+
+                <TextView
+                    android:id="@+id/tituloTarea2"
+                    style="@style/Agendo.Texto.TituloTarea"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tarea_2_titulo" />
+
+                <TextView
+                    style="@style/Agendo.Texto.Secundario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/espacio_pequeno"
+                    android:text="@string/tarea_2_detalle" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/Agendo.Texto.Etiqueta.Media"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/espacio_medio"
+                android:layout_marginEnd="@dimen/espacio_grande"
+                android:text="@string/prioridad_media" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Tarea 3 -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/tarjetaTarea3"
+        style="@style/Agendo.Tarjeta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <View style="@style/Agendo.MarcaPrioridad.Baja" />
+
+            <CheckBox
+                android:id="@+id/casillaTarea3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/espacio_medio"
+                android:contentDescription="@string/tarea_3_titulo" />
+
+            <LinearLayout
+                android:layout_width="@dimen/ancho_segun_peso"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/espacio_grande"
+                android:paddingBottom="@dimen/espacio_grande">
+
+                <TextView
+                    android:id="@+id/tituloTarea3"
+                    style="@style/Agendo.Texto.TituloTarea"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tarea_3_titulo" />
+
+                <TextView
+                    style="@style/Agendo.Texto.Secundario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/espacio_pequeno"
+                    android:text="@string/tarea_3_detalle" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/Agendo.Texto.Etiqueta.Baja"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/espacio_medio"
+                android:layout_marginEnd="@dimen/espacio_grande"
+                android:text="@string/prioridad_baja" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Tarea 4 -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/tarjetaTarea4"
+        style="@style/Agendo.Tarjeta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <View style="@style/Agendo.MarcaPrioridad.Alta" />
+
+            <CheckBox
+                android:id="@+id/casillaTarea4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/espacio_medio"
+                android:contentDescription="@string/tarea_4_titulo" />
+
+            <LinearLayout
+                android:layout_width="@dimen/ancho_segun_peso"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/espacio_grande"
+                android:paddingBottom="@dimen/espacio_grande">
+
+                <TextView
+                    android:id="@+id/tituloTarea4"
+                    style="@style/Agendo.Texto.TituloTarea"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tarea_4_titulo" />
+
+                <TextView
+                    style="@style/Agendo.Texto.Secundario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/espacio_pequeno"
+                    android:text="@string/tarea_4_detalle" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/Agendo.Texto.Etiqueta.Alta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/espacio_medio"
+                android:layout_marginEnd="@dimen/espacio_grande"
+                android:text="@string/prioridad_alta" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>
