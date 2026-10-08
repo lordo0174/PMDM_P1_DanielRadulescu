@@ -1,3 +1,70 @@
 <resources>
-    <string name="app_name">PMDM_P1_DanielRadulescu</string>
+    <string name="app_name" translatable="false">Agendo</string>
+
+    <!-- Pantalla principal -->
+    <string name="eslogan">Tu día entre clase, trabajo y vida personal</string>
+    <string name="titulo_hoy">Tareas de hoy</string>
+    <plurals name="resumen_pendientes">
+        <item quantity="one">Tienes %1$d tarea pendiente</item>
+        <item quantity="other">Tienes %1$d tareas pendientes</item>
+    </plurals>
+    <string name="resumen_progreso">Completadas: %1$d de %2$d</string>
+    <string name="seccion_categorias">Categorías</string>
+    <string name="seccion_tareas">Tu lista</string>
+    <string name="accion_nueva_tarea">Nueva tarea</string>
+
+    <!-- Categorías (también se usan en el string-array) -->
+    <string name="categoria_todas">Todas</string>
+    <string name="categoria_clase">Clase</string>
+    <string name="categoria_trabajo">Trabajo</string>
+    <string name="categoria_personal">Personal</string>
+
+    <!-- Prioridades -->
+    <string name="prioridad_alta">Alta</string>
+    <string name="prioridad_media">Media</string>
+    <string name="prioridad_baja">Baja</string>
+
+    <!-- Tareas de ejemplo -->
+    <string name="tarea_1_titulo">Entregar la práctica de PMDM</string>
+    <string name="tarea_1_detalle">Clase · Hoy, 23:59</string>
+    <string name="tarea_2_titulo">Turno en la tienda</string>
+    <string name="tarea_2_detalle">Trabajo · 17:00 – 21:00</string>
+    <string name="tarea_3_titulo">Repasar para el examen de Acceso a Datos</string>
+    <string name="tarea_3_detalle">Clase · Mañana, 10:00</string>
+    <string name="tarea_4_titulo">Ir al gimnasio</string>
+    <string name="tarea_4_detalle">Personal · 20:30</string>
+
+    <!-- Pantalla Nueva tarea -->
+    <string name="titulo_nueva_tarea">Nueva tarea</string>
+    <string name="campo_titulo">Título de la tarea</string>
+    <string name="campo_titulo_ayuda">Ej.: Entregar la práctica de PMDM</string>
+    <string name="campo_descripcion">Descripción (opcional)</string>
+    <string name="campo_categoria">Categoría</string>
+    <string name="campo_prioridad">Prioridad</string>
+    <string name="campo_fecha">Fecha límite</string>
+    <string name="campo_fecha_pista">dd/mm/aaaa</string>
+    <string name="campo_recordatorio">Avisarme una hora antes</string>
+    <string name="accion_guardar">Guardar tarea</string>
+    <string name="accion_cancelar">Cancelar</string>
+    <string name="accion_volver">Volver</string>
+    <string name="mensaje_tarea_guardada">Tarea «%1$s» guardada</string>
+    <string name="error_titulo_vacio">Escribe un título para la tarea</string>
+
+    <!-- Descripciones de accesibilidad -->
+    <string name="descripcion_logo">Logotipo de Agendo</string>
+    <string name="descripcion_cabecera">Escritorio con una agenda abierta</string>
+    <string name="descripcion_calendario">Elegir fecha</string>
+
+    <!-- Listas -->
+    <string-array name="categorias">
+        <item>@string/categoria_clase</item>
+        <item>@string/categoria_trabajo</item>
+        <item>@string/categoria_personal</item>
+    </string-array>
+
+    <string-array name="prioridades">
+        <item>@string/prioridad_alta</item>
+        <item>@string/prioridad_media</item>
+        <item>@string/prioridad_baja</item>
+    </string-array>
 </resources>
