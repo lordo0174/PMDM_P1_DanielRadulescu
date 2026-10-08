@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ================= TEXTOS ================= -->
+    <!-- Estilo base de texto: los estilos "Agendo.Texto.X" heredan de él por el nombre -->
+    <style name="Agendo.Texto" parent="">
+        <item name="android:textColor">@color/color_texto_principal</item>
+        <item name="android:textSize">@dimen/texto_cuerpo</item>
+    </style>
+
+    <!-- Título grande de cada pantalla -->
+    <style name="Agendo.Texto.TituloPantalla">
+        <item name="android:textSize">@dimen/texto_titulo_grande</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Título de sección ("Categorías", "Tu lista"...) -->
+    <style name="Agendo.Texto.Seccion">
+        <item name="android:textSize">@dimen/texto_titulo</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginTop">@dimen/espacio_extra</item>
+        <item name="android:layout_marginBottom">@dimen/espacio_medio</item>
+    </style>
+
+    <!-- Título de una tarea dentro de su tarjeta -->
+    <style name="Agendo.Texto.TituloTarea">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Textos de apoyo: detalles de la tarea, eslogan... -->
+    <style name="Agendo.Texto.Secundario">
+        <item name="android:textColor">@color/color_texto_secundario</item>
+        <item name="android:textSize">@dimen/texto_secundario</item>
+    </style>
+
+    <!-- Textos sobre la tarjeta de resumen (fondo color primario) -->
+    <style name="Agendo.Texto.SobrePrimario">
+        <item name="android:textColor">@color/color_sobre_primario</item>
+        <item name="android:textSize">@dimen/texto_titulo</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Agendo.Texto.SobrePrimario.Detalle">
+        <item name="android:textColor">@color/color_primario_contenedor</item>
+        <item name="android:textSize">@dimen/texto_secundario</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <!-- Etiqueta de prioridad: una base y una variante por prioridad -->
+    <style name="Agendo.Texto.Etiqueta">
+        <item name="android:textSize">@dimen/texto_etiqueta</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@drawable/fondo_etiqueta</item>
+        <item name="android:paddingStart">@dimen/espacio_medio</item>
+        <item name="android:paddingEnd">@dimen/espacio_medio</item>
+        <item name="android:paddingTop">@dimen/espacio_pequeno</item>
+        <item name="android:paddingBottom">@dimen/espacio_pequeno</item>
+    </style>
+
+    <style name="Agendo.Texto.Etiqueta.Alta">
+        <item name="android:backgroundTint">@color/color_prioridad_alta_fondo</item>
+    </style>
+
+    <style name="Agendo.Texto.Etiqueta.Media">
+        <item name="android:backgroundTint">@color/color_prioridad_media_fondo</item>
+    </style>
+
+    <style name="Agendo.Texto.Etiqueta.Baja">
+        <item name="android:backgroundTint">@color/color_prioridad_baja_fondo</item>
+    </style>
+
+    <!-- ================= BOTONES ================= -->
+    <!-- Botón principal (relleno con el color primario) -->
+    <style name="Agendo.Boton.Principal" parent="Widget.Material3.Button">
+        <item name="android:minHeight">@dimen/alto_boton</item>
+        <item name="android:textSize">@dimen/texto_cuerpo</item>
+        <item name="android:textStyle">bold</item>
+        <item name="cornerRadius">@dimen/radio_boton</item>
+        <item name="backgroundTint">@color/color_primario</item>
+        <item name="android:textColor">@color/color_sobre_primario</item>
+    </style>
+
+    <!-- Botón secundario (solo borde) -->
+    <style name="Agendo.Boton.Secundario" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:minHeight">@dimen/alto_boton</item>
+        <item name="android:textSize">@dimen/texto_cuerpo</item>
+        <item name="android:textStyle">bold</item>
+        <item name="cornerRadius">@dimen/radio_boton</item>
+        <item name="strokeColor">@color/color_primario</item>
+        <item name="android:textColor">@color/color_primario</item>
+    </style>
+
+    <!-- Botón flotante "Nueva tarea" con el color de acento -->
+    <style name="Agendo.BotonFlotante" parent="Widget.Material3.ExtendedFloatingActionButton.Icon.Primary">
+        <item name="backgroundTint">@color/color_acento</item>
+        <item name="android:textColor">@color/color_sobre_acento</item>
+        <item name="iconTint">@color/color_sobre_acento</item>
+        <item name="android:textSize">@dimen/texto_cuerpo</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- ================= TARJETAS ================= -->
+    <!-- Tarjeta de una tarea -->
+    <style name="Agendo.Tarjeta" parent="Widget.Material3.CardView.Outlined">
+        <item name="cardBackgroundColor">@color/color_superficie</item>
+        <item name="cardCornerRadius">@dimen/radio_tarjeta</item>
+        <item name="strokeColor">@color/color_borde</item>
+        <item name="strokeWidth">@dimen/borde_tarjeta</item>
+        <item name="android:layout_marginBottom">@dimen/espacio_medio</item>
+    </style>
+
+    <!-- Tarjeta de resumen del día: hereda de Agendo.Tarjeta y cambia el fondo -->
+    <style name="Agendo.Tarjeta.Resumen">
+        <item name="cardBackgroundColor">@color/color_primario</item>
+        <item name="strokeWidth">@dimen/sin_borde</item>
+        <item name="android:layout_marginBottom">@dimen/espacio_grande</item>
+    </style>
+
+    <!-- Franja de color que indica la prioridad a la izquierda de cada tarjeta -->
+    <style name="Agendo.MarcaPrioridad" parent="">
+        <item name="android:layout_width">@dimen/ancho_marca_prioridad</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="Agendo.MarcaPrioridad.Alta">
+        <item name="android:background">@color/color_prioridad_alta</item>
+    </style>
+
+    <style name="Agendo.MarcaPrioridad.Media">
+        <item name="android:background">@color/color_prioridad_media</item>
+    </style>
+
+    <style name="Agendo.MarcaPrioridad.Baja">
+        <item name="android:background">@color/color_prioridad_baja</item>
+    </style>
+
+    <!-- ================= FORMULARIO ================= -->
+    <!-- Campo de texto del formulario "Nueva tarea" -->
+    <style name="Agendo.CampoTexto" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="boxCornerRadiusTopStart">@dimen/radio_boton</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/radio_boton</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/radio_boton</item>
+        <item name="boxCornerRadiusBottomEnd">@dimen/radio_boton</item>
+        <item name="boxStrokeColor">@color/color_primario</item>
+        <item name="hintTextColor">@color/color_primario</item>
+        <item name="android:layout_marginBottom">@dimen/espacio_grande</item>
+    </style>
+
+    <!-- Campo desplegable (categoría) con el mismo aspecto que Agendo.CampoTexto -->
+    <style name="Agendo.CampoTexto.Desplegable" parent="Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+        <item name="boxCornerRadiusTopStart">@dimen/radio_boton</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/radio_boton</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/radio_boton</item>
+        <item name="boxCornerRadiusBottomEnd">@dimen/radio_boton</item>
+        <item name="boxStrokeColor">@color/color_primario</item>
+        <item name="hintTextColor">@color/color_primario</item>
+        <item name="android:layout_marginBottom">@dimen/espacio_grande</item>
+    </style>
+
+    <!-- Chip para filtrar por categoría o elegir prioridad -->
+    <style name="Agendo.Chip" parent="Widget.Material3.Chip.Filter">
+        <item name="android:textSize">@dimen/texto_secundario</item>
+        <item name="chipCornerRadius">@dimen/radio_boton</item>
+    </style>
+
+    <!-- Barra de progreso de la tarjeta de resumen -->
+    <style name="Agendo.BarraProgreso" parent="Widget.Material3.LinearProgressIndicator">
+        <item name="trackThickness">@dimen/alto_barra_progreso</item>
+        <item name="trackCornerRadius">@dimen/espacio_pequeno</item>
+        <item name="indicatorColor">@color/color_acento</item>
+        <item name="trackColor">@color/color_primario_contenedor</item>
+    </style>
+
+</resources>

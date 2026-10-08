@@ -21,4 +21,9 @@
     <color name="color_prioridad_alta">#FFE5484D</color>
     <color name="color_prioridad_media">#FFF5A524</color>
     <color name="color_prioridad_baja">#FF30A46C</color>
+
+    <!-- Fondos suaves de las etiquetas de prioridad (el texto oscuro se lee bien encima) -->
+    <color name="color_prioridad_alta_fondo">#FFFDE7E7</color>
+    <color name="color_prioridad_media_fondo">#FFFEF1D8</color>
+    <color name="color_prioridad_baja_fondo">#FFE2F4EA</color>
 </resources>

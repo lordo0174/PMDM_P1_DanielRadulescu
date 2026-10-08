@@ -16,8 +16,9 @@
     <dimen name="ancho_marca_prioridad">6dp</dimen>
     <dimen name="radio_tarjeta">16dp</dimen>
     <dimen name="radio_boton">14dp</dimen>
-    <dimen name="elevacion_tarjeta">2dp</dimen>
+    <dimen name="radio_etiqueta">12dp</dimen>
     <dimen name="borde_tarjeta">1dp</dimen>
+    <dimen name="sin_borde">0dp</dimen>
 
     <!-- Tamaños de texto (sp) -->
     <dimen name="texto_titulo_grande">28sp</dimen>
