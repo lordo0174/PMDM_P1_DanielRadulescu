@@ -11,6 +11,7 @@
     <!-- Fondos y superficies -->
     <color name="color_fondo">#FFF5F7FB</color>
     <color name="color_superficie">#FFFFFFFF</color>
+    <color name="color_superficie_variante">#FFE8ECF4</color>
     <color name="color_borde">#FFDDE3EE</color>
 
     <!-- Textos -->

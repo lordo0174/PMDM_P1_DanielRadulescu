@@ -12,6 +12,7 @@
     <dimen name="tamano_logo">56dp</dimen>
     <dimen name="tamano_icono">24dp</dimen>
     <dimen name="alto_boton">56dp</dimen>
+    <dimen name="espacio_boton_flotante">96dp</dimen>
     <dimen name="alto_barra_progreso">8dp</dimen>
     <dimen name="ancho_marca_prioridad">6dp</dimen>
     <dimen name="radio_tarjeta">16dp</dimen>
@@ -19,6 +20,8 @@
     <dimen name="radio_etiqueta">12dp</dimen>
     <dimen name="borde_tarjeta">1dp</dimen>
     <dimen name="sin_borde">0dp</dimen>
+    <!-- Ancho 0dp para que la vista ocupe el espacio que le da layout_weight -->
+    <dimen name="ancho_segun_peso">0dp</dimen>
 
     <!-- Tamaños de texto (sp) -->
     <dimen name="texto_titulo_grande">28sp</dimen>

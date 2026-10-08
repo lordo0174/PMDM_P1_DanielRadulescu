@@ -163,6 +163,12 @@
         <item name="chipCornerRadius">@dimen/radio_boton</item>
     </style>
 
+    <!-- Esquinas redondeadas para la imagen de cabecera -->
+    <style name="Agendo.Forma.Redondeada" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/radio_tarjeta</item>
+    </style>
+
     <!-- Barra de progreso de la tarjeta de resumen -->
     <style name="Agendo.BarraProgreso" parent="Widget.Material3.LinearProgressIndicator">
         <item name="trackThickness">@dimen/alto_barra_progreso</item>

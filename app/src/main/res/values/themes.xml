@@ -7,12 +7,21 @@
         <item name="colorOnPrimaryContainer">@color/color_sobre_primario_contenedor</item>
         <item name="colorSecondary">@color/color_acento</item>
         <item name="colorOnSecondary">@color/color_sobre_acento</item>
+        <item name="colorSecondaryContainer">@color/color_primario_contenedor</item>
+        <item name="colorOnSecondaryContainer">@color/color_sobre_primario_contenedor</item>
         <item name="android:colorBackground">@color/color_fondo</item>
         <item name="colorOnBackground">@color/color_texto_principal</item>
         <item name="colorSurface">@color/color_superficie</item>
         <item name="colorOnSurface">@color/color_texto_principal</item>
+        <item name="colorSurfaceVariant">@color/color_superficie_variante</item>
         <item name="colorOnSurfaceVariant">@color/color_texto_secundario</item>
+        <item name="colorSurfaceContainerLowest">@color/color_superficie</item>
+        <item name="colorSurfaceContainerLow">@color/color_superficie</item>
+        <item name="colorSurfaceContainer">@color/color_superficie</item>
+        <item name="colorSurfaceContainerHigh">@color/color_superficie_variante</item>
+        <item name="colorSurfaceContainerHighest">@color/color_superficie_variante</item>
         <item name="colorOutline">@color/color_borde</item>
+        <item name="colorOutlineVariant">@color/color_borde</item>
         <item name="colorError">@color/color_prioridad_alta</item>
     </style>
 

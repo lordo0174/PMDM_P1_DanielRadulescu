@@ -25,14 +25,14 @@
     <string name="prioridad_baja">Baja</string>
 
     <!-- Tareas de ejemplo -->
-    <string name="tarea_1_titulo">Entregar la práctica de PMDM</string>
-    <string name="tarea_1_detalle">Clase · Hoy, 23:59</string>
+    <string name="tarea_1_titulo">Repasar para el examen de Acceso a Datos</string>
+    <string name="tarea_1_detalle">Clase · 10:00</string>
     <string name="tarea_2_titulo">Turno en la tienda</string>
     <string name="tarea_2_detalle">Trabajo · 17:00 – 21:00</string>
-    <string name="tarea_3_titulo">Repasar para el examen de Acceso a Datos</string>
-    <string name="tarea_3_detalle">Clase · Mañana, 10:00</string>
-    <string name="tarea_4_titulo">Ir al gimnasio</string>
-    <string name="tarea_4_detalle">Personal · 20:30</string>
+    <string name="tarea_3_titulo">Ir al gimnasio</string>
+    <string name="tarea_3_detalle">Personal · 21:30</string>
+    <string name="tarea_4_titulo">Entregar la práctica de PMDM</string>
+    <string name="tarea_4_detalle">Clase · 23:59</string>
 
     <!-- Pantalla Nueva tarea -->
     <string name="titulo_nueva_tarea">Nueva tarea</string>
