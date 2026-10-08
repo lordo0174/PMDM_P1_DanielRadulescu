@@ -1,4 +1,5 @@
-<resources>
+<!-- Idioma por defecto de la app: español. La traducción al inglés está en values-en -->
+<resources xmlns:tools="http://schemas.android.com/tools" tools:locale="es">
     <string name="app_name" translatable="false">Agendo</string>
 
     <!-- Pantalla principal -->
@@ -6,6 +7,7 @@
     <string name="titulo_hoy">Tareas de hoy</string>
     <plurals name="resumen_pendientes">
         <item quantity="one">Tienes %1$d tarea pendiente</item>
+        <item quantity="many">Tienes %1$d tareas pendientes</item>
         <item quantity="other">Tienes %1$d tareas pendientes</item>
     </plurals>
     <string name="resumen_progreso">Completadas: %1$d de %2$d</string>

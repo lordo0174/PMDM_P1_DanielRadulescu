@@ -1,0 +1,56 @@
+<resources>
+    <!-- Main screen -->
+    <string name="eslogan">Your day across classes, work and personal life</string>
+    <string name="titulo_hoy">Today\'s tasks</string>
+    <plurals name="resumen_pendientes">
+        <item quantity="one">You have %1$d pending task</item>
+        <item quantity="other">You have %1$d pending tasks</item>
+    </plurals>
+    <string name="resumen_progreso">Completed: %1$d of %2$d</string>
+    <string name="seccion_categorias">Categories</string>
+    <string name="seccion_tareas">Your list</string>
+    <string name="accion_nueva_tarea">New task</string>
+
+    <!-- Categories (the string-array in values/ points to these, so it is translated too) -->
+    <string name="categoria_todas">All</string>
+    <string name="categoria_clase">Class</string>
+    <string name="categoria_trabajo">Work</string>
+    <string name="categoria_personal">Personal</string>
+
+    <!-- Priorities -->
+    <string name="prioridad_alta">High</string>
+    <string name="prioridad_media">Medium</string>
+    <string name="prioridad_baja">Low</string>
+
+    <!-- Sample tasks (12-hour clock, as usual in English) -->
+    <string name="tarea_1_titulo">Study for the Data Access exam</string>
+    <string name="tarea_1_detalle">Class · 10:00 AM</string>
+    <string name="tarea_2_titulo">Shift at the shop</string>
+    <string name="tarea_2_detalle">Work · 5:00 – 9:00 PM</string>
+    <string name="tarea_3_titulo">Go to the gym</string>
+    <string name="tarea_3_detalle">Personal · 9:30 PM</string>
+    <string name="tarea_4_titulo">Hand in the PMDM assignment</string>
+    <string name="tarea_4_detalle">Class · 11:59 PM</string>
+
+    <!-- New task screen -->
+    <string name="titulo_nueva_tarea">New task</string>
+    <string name="subtitulo_nueva_tarea">Write down what you need to do and when</string>
+    <string name="campo_titulo">Task title</string>
+    <string name="campo_titulo_ayuda">E.g.: Hand in the PMDM assignment</string>
+    <string name="campo_descripcion">Description (optional)</string>
+    <string name="campo_categoria">Category</string>
+    <string name="campo_prioridad">Priority</string>
+    <string name="campo_fecha">Due date</string>
+    <string name="campo_fecha_pista">mm/dd/yyyy</string>
+    <string name="campo_recordatorio">Remind me one hour before</string>
+    <string name="accion_guardar">Save task</string>
+    <string name="accion_cancelar">Cancel</string>
+    <string name="accion_volver">Back</string>
+    <string name="mensaje_tarea_guardada">Task “%1$s” saved</string>
+    <string name="error_titulo_vacio">Enter a title for the task</string>
+
+    <!-- Accessibility descriptions -->
+    <string name="descripcion_logo">Agendo logo</string>
+    <string name="descripcion_cabecera">Desk with an open planner</string>
+    <string name="descripcion_calendario">Pick a date</string>
+</resources>
