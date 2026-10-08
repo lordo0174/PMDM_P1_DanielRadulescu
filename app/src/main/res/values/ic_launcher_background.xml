@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Fondo del icono: mismo índigo que color_primario, separado para que no cambie con el tema oscuro -->
+    <color name="ic_launcher_background">#FF2F4B9A</color>
+</resources>
