@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NuevaTareaActivity">
+
+    <!-- Barra superior con la flecha para volver -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_fondo">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/barraHerramientas"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:navigationContentDescription="@string/accion_volver"
+            app:navigationIcon="@drawable/ic_volver"
+            app:navigationIconTint="@color/color_texto_principal" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/margen_pantalla"
+            android:paddingEnd="@dimen/margen_pantalla"
+            android:paddingBottom="@dimen/margen_pantalla">
+
+            <TextView
+                style="@style/Agendo.Texto.TituloPantalla"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/titulo_nueva_tarea" />
+
+            <TextView
+                style="@style/Agendo.Texto.Secundario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/espacio_extra"
+                android:text="@string/subtitulo_nueva_tarea" />
+
+            <!-- Título -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/capaTitulo"
+                style="@style/Agendo.CampoTexto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/campo_titulo"
+                app:helperText="@string/campo_titulo_ayuda">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/campoTitulo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapSentences" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Descripción -->
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Agendo.CampoTexto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/campo_descripcion">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine|textCapSentences" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Categoría: desplegable cargado desde el string-array "categorias" -->
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Agendo.CampoTexto.Desplegable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/campo_categoria">
+
+                <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="none"
+                    app:simpleItems="@array/categorias" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Fecha límite -->
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Agendo.CampoTexto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/campo_fecha"
+                app:endIconContentDescription="@string/descripcion_calendario"
+                app:endIconDrawable="@drawable/ic_calendario"
+                app:endIconMode="custom"
+                app:placeholderText="@string/campo_fecha_pista">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="date" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Prioridad -->
+            <TextView
+                style="@style/Agendo.Texto.Secundario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/campo_prioridad" />
+
+            <com.google.android.material.chip.ChipGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/espacio_medio"
+                app:checkedChip="@id/chipPrioridadMedia"
+                app:selectionRequired="true"
+                app:singleSelection="true">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipPrioridadAlta"
+                    style="@style/Agendo.Chip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/prioridad_alta" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipPrioridadMedia"
+                    style="@style/Agendo.Chip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/prioridad_media" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipPrioridadBaja"
+                    style="@style/Agendo.Chip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/prioridad_baja" />
+            </com.google.android.material.chip.ChipGroup>
+
+            <!-- Recordatorio -->
+            <com.google.android.material.materialswitch.MaterialSwitch
+                android:id="@+id/interruptorRecordatorio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/espacio_extra"
+                android:checked="true"
+                android:text="@string/campo_recordatorio"
+                android:textColor="@color/color_texto_principal"
+                android:textSize="@dimen/texto_cuerpo" />
+
+            <!-- Acciones -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/botonGuardar"
+                style="@style/Agendo.Boton.Principal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/accion_guardar" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/botonCancelar"
+                style="@style/Agendo.Boton.Secundario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/espacio_medio"
+                android:text="@string/accion_cancelar" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

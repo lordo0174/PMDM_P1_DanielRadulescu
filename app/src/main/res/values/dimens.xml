@@ -10,7 +10,6 @@
     <!-- Tamaños de componentes (dp) -->
     <dimen name="alto_cabecera">180dp</dimen>
     <dimen name="tamano_logo">56dp</dimen>
-    <dimen name="tamano_icono">24dp</dimen>
     <dimen name="alto_boton">56dp</dimen>
     <dimen name="espacio_boton_flotante">96dp</dimen>
     <dimen name="alto_barra_progreso">8dp</dimen>

@@ -36,6 +36,7 @@
 
     <!-- Pantalla Nueva tarea -->
     <string name="titulo_nueva_tarea">Nueva tarea</string>
+    <string name="subtitulo_nueva_tarea">Apunta qué tienes que hacer y para cuándo</string>
     <string name="campo_titulo">Título de la tarea</string>
     <string name="campo_titulo_ayuda">Ej.: Entregar la práctica de PMDM</string>
     <string name="campo_descripcion">Descripción (opcional)</string>
@@ -60,11 +61,5 @@
         <item>@string/categoria_clase</item>
         <item>@string/categoria_trabajo</item>
         <item>@string/categoria_personal</item>
-    </string-array>
-
-    <string-array name="prioridades">
-        <item>@string/prioridad_alta</item>
-        <item>@string/prioridad_media</item>
-        <item>@string/prioridad_baja</item>
     </string-array>
 </resources>

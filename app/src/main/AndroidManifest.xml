@@ -20,6 +20,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".NuevaTareaActivity"
+            android:exported="false"
+            android:label="@string/titulo_nueva_tarea"
+            android:parentActivityName=".MainActivity" />
     </application>
 
 </manifest>

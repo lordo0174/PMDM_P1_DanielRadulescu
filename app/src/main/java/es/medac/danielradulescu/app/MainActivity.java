@@ -1,5 +1,6 @@
 package es.medac.danielradulescu.app;
 
+import android.content.Intent;
 import android.graphics.Paint;
 import android.os.Bundle;
 import android.view.View;
@@ -54,6 +55,10 @@ public class MainActivity extends AppCompatActivity {
             findViewById(tarea[0]).setOnClickListener(v -> casilla.toggle());
         }
         grupoCategorias.setOnCheckedStateChangeListener((grupo, ids) -> actualizarTareas());
+
+        // El botón flotante abre la pantalla "Nueva tarea"
+        findViewById(R.id.botonNuevaTarea).setOnClickListener(v ->
+                startActivity(new Intent(this, NuevaTareaActivity.class)));
 
         actualizarTareas();
     }
